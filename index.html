@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Height calculator tool</title>
+        <link rel="stylesheet" href="./src/style.css">
+	</head>
+	<body>
+        <section class="container page-container">
+            <div class="container card">
+                <header class="container header">
+                    <h3 class="title">Height calculator tool</h3>
+                    <button class="exit-btn"><img src="./img/iconmonstr-x-mark-2.svg" alt="exit"></button>
+                </header>
+                <div class="container input-container">
+                    <span class="input-title">Input your height</span>
+                    <input class="input-box" type="number" id="box-input">
+                    <span class="metric">cm</span>
+                </div>
+                <div class="container btn-container">
+                    <button class="btn" id="btn">Submit</button>
+                </div>
+            </div>
+
+            <div class="container card alert" id="alert-card">
+                <header class="container header">
+                    <h3 class="title">Result</h3>
+                    <button class="exit-btn"><img src="./img/iconmonstr-x-mark-2.svg" alt="exit"></button>
+                </header>
+                <div class="container input-container">
+                    <span class="image"><img src="./img/bxs-error-circle.svg" alt="alert"></span>
+                    <span class="output" id="output"></span>
+                </div>
+                <div class="container btn-container">
+                    <button class="btn" id="close-btn">OK</button>
+                </div>
+            </div>
+        </section>
+    </body>
+    <script src="./src/script.js"></script>
+</html>
